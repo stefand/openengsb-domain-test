@@ -33,7 +33,7 @@ public interface TestDomain extends Domain {
      * asynchronously. The result can be retrieved using the events raised by this domain, which also contain the id.
      */
     @Raises({ TestStartEvent.class, TestSuccessEvent.class, TestFailEvent.class })
-    String runTests(OpenEngSBFileModel path);
+    String wrongName(OpenEngSBFileModel path);
 
     /**
      * run all tests for the project in 'path'. This method returns at once with an id. The tests are run
